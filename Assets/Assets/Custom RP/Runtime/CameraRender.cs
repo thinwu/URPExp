@@ -28,9 +28,13 @@ public class CameraRender
             criteria = SortingCriteria.CommonOpaque
         };
         var drawingSetting = new DrawingSettings(unlitShaderTagId, sortingSettings);
-        var filterSettings = new FilteringSettings(RenderQueueRange.all);
+        var filterSettings = new FilteringSettings(RenderQueueRange.opaque);
         context.DrawRenderers(cullingResults, ref drawingSetting, ref filterSettings);
         context.DrawSkybox(camera);
+        sortingSettings.criteria = SortingCriteria.CommonTransparent;
+        drawingSetting.sortingSettings = sortingSettings;
+        filterSettings.renderQueueRange = RenderQueueRange.transparent;
+        context.DrawRenderers(cullingResults, ref drawingSetting, ref filterSettings);
     }
     void Submit()
     {
