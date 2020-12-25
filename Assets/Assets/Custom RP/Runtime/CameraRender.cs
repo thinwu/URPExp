@@ -1,7 +1,7 @@
 ﻿using UnityEngine.Rendering;
 using UnityEngine;
 
-public class CameraRender
+public partial class CameraRender
 {
     ScriptableRenderContext context;
     Camera camera;
@@ -9,6 +9,7 @@ public class CameraRender
     CommandBuffer buffer = new CommandBuffer { name = bufferName };
     CullingResults cullingResults;
     static ShaderTagId unlitShaderTagId = new ShaderTagId("SRPDefaultUnlit");
+    
     public void Render(ScriptableRenderContext context, Camera camera)
     {
         this.context = context;
@@ -19,6 +20,8 @@ public class CameraRender
         }
         Setup();
         DrawVisibleGeometry();
+        DrawUnsupportedShaders();
+        DrawGizmos();
         Submit();
         
     }
@@ -36,9 +39,11 @@ public class CameraRender
         filterSettings.renderQueueRange = RenderQueueRange.transparent;
         context.DrawRenderers(cullingResults, ref drawingSetting, ref filterSettings);
     }
+
+  
     void Submit()
     {
-        buffer.EndSample(bufferName);
+        buffer.EndSample(SampleName);
         ExecuteBuffer();
         context.Submit();
     }
@@ -46,7 +51,7 @@ public class CameraRender
     {
         context.SetupCameraProperties(camera);
         buffer.ClearRenderTarget(true, true, Color.clear);
-        buffer.BeginSample(bufferName);
+        buffer.BeginSample(SampleName);
         ExecuteBuffer();
         
     }
@@ -59,6 +64,8 @@ public class CameraRender
 
     bool Cull()
     {
+        PrepareBuffer();
+        PrepareForSceneWindow();
         if (camera.TryGetCullingParameters(out ScriptableCullingParameters p))
         {
             cullingResults = context.Cull(ref p);
