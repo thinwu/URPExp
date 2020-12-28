@@ -1319,7 +1319,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1672645248}
   - component: {fileID: 1672645247}
-  - component: {fileID: 1672645246}
   m_Layer: 0
   m_Name: Second Camera
   m_TagString: MainCamera
@@ -1327,14 +1326,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1672645246
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672645245}
-  m_Enabled: 1
 --- !u!20 &1672645247
 Camera:
   m_ObjectHideFlags: 0
@@ -1344,7 +1335,7 @@ Camera:
   m_GameObject: {fileID: 1672645245}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 3
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1354,13 +1345,13 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+    x: 0.49
+    y: 0.24
+    width: 0.09
+    height: 0.09
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 36
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1386,7 +1377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672645245}
   m_LocalRotation: {x: 0.015666775, y: 0.2777548, z: -0.004530287, w: 0.9605136}
-  m_LocalPosition: {x: -5.0859785, y: 3.1783934, z: -12.191308}
+  m_LocalPosition: {x: -5.0859785, y: 3.1783934, z: -46.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
