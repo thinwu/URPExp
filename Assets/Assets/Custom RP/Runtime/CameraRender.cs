@@ -5,11 +5,16 @@ public partial class CameraRender
 {
     ScriptableRenderContext context;
     Camera camera;
+    
     const string bufferName = "Render Camera";
     CommandBuffer buffer = new CommandBuffer { name = bufferName };
     CullingResults cullingResults;
-    static ShaderTagId unlitShaderTagId = new ShaderTagId("SRPDefaultUnlit");
+    static ShaderTagId 
+        unlitShaderTagId = new ShaderTagId("SRPDefaultUnlit"), 
+        litShaderTagId = new ShaderTagId("CustomLit");
     
+    Lighting lighting = new Lighting();
+
     public void Render(
         ScriptableRenderContext context, Camera camera, 
         bool useDynamicBatching, bool useGPUInstancing
@@ -21,6 +26,7 @@ public partial class CameraRender
             return; 
         }
         Setup();
+        lighting.Setup(ref context, ref cullingResults);
         DrawVisibleGeometry(useDynamicBatching, useGPUInstancing);
         DrawUnsupportedShaders();
         DrawGizmos();
@@ -32,18 +38,19 @@ public partial class CameraRender
         var sortingSettings = new SortingSettings(camera) {
             criteria = SortingCriteria.CommonOpaque
         };
-        var drawingSetting = new DrawingSettings(unlitShaderTagId, sortingSettings)
+        var drawingSettings = new DrawingSettings(unlitShaderTagId, sortingSettings)
         {
             enableDynamicBatching = useDynamicBatching,
             enableInstancing = useGPUInstancing,
         };
+        drawingSettings.SetShaderPassName(1, litShaderTagId);
         var filterSettings = new FilteringSettings(RenderQueueRange.opaque);
-        context.DrawRenderers(cullingResults, ref drawingSetting, ref filterSettings);
+        context.DrawRenderers(cullingResults, ref drawingSettings, ref filterSettings);
         context.DrawSkybox(camera);
         sortingSettings.criteria = SortingCriteria.CommonTransparent;
-        drawingSetting.sortingSettings = sortingSettings;
+        drawingSettings.sortingSettings = sortingSettings;
         filterSettings.renderQueueRange = RenderQueueRange.transparent;
-        context.DrawRenderers(cullingResults, ref drawingSetting, ref filterSettings);
+        context.DrawRenderers(cullingResults, ref drawingSettings, ref filterSettings);
     }
 
   

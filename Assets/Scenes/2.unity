@@ -228,6 +228,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.026432902, g: 0.5244839, b: 0.9339623, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.221
 --- !u!1 &126312645
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,6 +339,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0
 --- !u!1 &134666845
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +450,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.90588236, g: 0.85644025, b: 0.1019608, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.294
 --- !u!1 &142048351
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +561,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.90588236, g: 0.85644025, b: 0.1019608, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.294
 --- !u!1 &190633048
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +672,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.026432902, g: 0.5244839, b: 0.9339623, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.221
 --- !u!1 &195568415
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,6 +783,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0
 --- !u!1 &240962445
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +894,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.026432902, g: 0.5244839, b: 0.9339623, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.221
 --- !u!1 &244345062
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,7 +963,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c01356201b03be479f6d7e60588cdcd, type: 2}
+  - {fileID: 2100000, guid: 42d2d36e274f1dd4c943d8a16196c754, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -976,7 +1004,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e51fdbd6dcd754fac6b0f10ed49919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColor: {r: 0.3635934, g: 0.9716981, b: 0.06416872, a: 1}
+  baseColor: {r: 0.33189654, g: 1, b: 0, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.743
 --- !u!1 &244760146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,6 +1116,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0
 --- !u!1 &420714830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,6 +1227,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.90588236, g: 0.85644025, b: 0.1019608, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.294
 --- !u!1 &450921087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,7 +1296,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c01356201b03be479f6d7e60588cdcd, type: 2}
+  - {fileID: 2100000, guid: 42d2d36e274f1dd4c943d8a16196c754, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1297,7 +1337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e51fdbd6dcd754fac6b0f10ed49919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColor: {r: 0.3635934, g: 0.9716981, b: 0.06416872, a: 1}
+  baseColor: {r: 0.33189654, g: 1, b: 0, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.743
 --- !u!1 &560372002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,6 +1449,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.026432902, g: 0.5244839, b: 0.9339623, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.221
 --- !u!1 &584348529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +1560,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.026432902, g: 0.5244839, b: 0.9339623, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.221
 --- !u!1 &606228796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,6 +1671,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.026432902, g: 0.5244839, b: 0.9339623, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.221
 --- !u!1 &623418653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,6 +1782,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0
 --- !u!1 &626368204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +1893,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.90588236, g: 0.85644025, b: 0.1019608, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.294
 --- !u!1 &671163689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,6 +2004,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0
 --- !u!1 &728211501
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,7 +2073,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c01356201b03be479f6d7e60588cdcd, type: 2}
+  - {fileID: 2100000, guid: 42d2d36e274f1dd4c943d8a16196c754, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2046,7 +2114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e51fdbd6dcd754fac6b0f10ed49919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColor: {r: 0.3635934, g: 0.9716981, b: 0.06416872, a: 1}
+  baseColor: {r: 0.33189654, g: 1, b: 0, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.743
 --- !u!1 &736310873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2153,7 +2225,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e51fdbd6dcd754fac6b0f10ed49919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColor: {r: 0.3635934, g: 0.9716981, b: 0.06416872, a: 1}
+  baseColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+  srcBlend: 4
+  dstBlend: 6
+  zWrite: 1
+  cutoff: 0.743
 --- !u!1 &881363151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,6 +2379,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.90588236, g: 0.85644025, b: 0.1019608, a: 1}
+  srcBlend: 5
+  dstBlend: 8
+  zWrite: 1
+  cutoff: 0.294
 --- !u!1 &924133727
 GameObject:
   m_ObjectHideFlags: 0
@@ -2368,7 +2448,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c01356201b03be479f6d7e60588cdcd, type: 2}
+  - {fileID: 2100000, guid: 4e4b7d00ade45a94c989952b38b5465d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2409,7 +2489,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e51fdbd6dcd754fac6b0f10ed49919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColor: {r: 0.3635934, g: 0.9716981, b: 0.06416872, a: 1}
+  baseColor: {r: 0.5283019, g: 0, b: 0, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.5
 --- !u!1 &968302417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2475,7 +2559,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c01356201b03be479f6d7e60588cdcd, type: 2}
+  - {fileID: 2100000, guid: 42d2d36e274f1dd4c943d8a16196c754, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2516,7 +2600,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e51fdbd6dcd754fac6b0f10ed49919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColor: {r: 0.3635934, g: 0.9716981, b: 0.06416872, a: 1}
+  baseColor: {r: 0.33189654, g: 1, b: 0, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.743
 --- !u!1 &1018935606
 GameObject:
   m_ObjectHideFlags: 0
@@ -2624,6 +2712,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0
 --- !u!1 &1074555604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,6 +2823,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.026432902, g: 0.5244839, b: 0.9339623, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.221
 --- !u!1 &1122873731
 GameObject:
   m_ObjectHideFlags: 0
@@ -2838,6 +2934,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.90588236, g: 0.85644025, b: 0.1019608, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.294
 --- !u!1 &1144431151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2945,6 +3045,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0
 --- !u!1 &1148812458
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,7 +3114,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c01356201b03be479f6d7e60588cdcd, type: 2}
+  - {fileID: 2100000, guid: 42d2d36e274f1dd4c943d8a16196c754, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3051,7 +3155,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e51fdbd6dcd754fac6b0f10ed49919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColor: {r: 0.3635934, g: 0.9716981, b: 0.06416872, a: 1}
+  baseColor: {r: 0.33189654, g: 1, b: 0, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.743
 --- !u!1 &1188467525
 GameObject:
   m_ObjectHideFlags: 0
@@ -3159,6 +3267,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0
 --- !u!1 &1210017200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3266,6 +3378,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0
 --- !u!1 &1214287466
 GameObject:
   m_ObjectHideFlags: 0
@@ -3373,6 +3489,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0
 --- !u!1 &1247080777
 GameObject:
   m_ObjectHideFlags: 0
@@ -3480,6 +3600,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.90588236, g: 0.85644025, b: 0.1019608, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.294
 --- !u!1 &1306824471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3679,6 +3803,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.90588236, g: 0.85644025, b: 0.1019608, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.294
 --- !u!1 &1384354948
 GameObject:
   m_ObjectHideFlags: 0
@@ -3786,6 +3914,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.90588236, g: 0.85644025, b: 0.1019608, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.294
 --- !u!1 &1428596714
 GameObject:
   m_ObjectHideFlags: 0
@@ -3893,6 +4025,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.026432902, g: 0.5244839, b: 0.9339623, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.221
 --- !u!1 &1429314518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3958,7 +4094,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c01356201b03be479f6d7e60588cdcd, type: 2}
+  - {fileID: 2100000, guid: 42d2d36e274f1dd4c943d8a16196c754, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3999,7 +4135,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e51fdbd6dcd754fac6b0f10ed49919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColor: {r: 0.3635934, g: 0.9716981, b: 0.06416872, a: 1}
+  baseColor: {r: 0.3333335, g: 1, b: 0, a: 1}
+  srcBlend: 2
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.743
 --- !u!1 &1433868832
 GameObject:
   m_ObjectHideFlags: 0
@@ -4107,6 +4247,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.026432902, g: 0.5244839, b: 0.9339623, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.221
 --- !u!1 &1505321697
 GameObject:
   m_ObjectHideFlags: 0
@@ -4214,6 +4358,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0
 --- !u!1 &1554585793
 GameObject:
   m_ObjectHideFlags: 0
@@ -4488,6 +4636,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0
 --- !u!1 &1753926298
 GameObject:
   m_ObjectHideFlags: 0
@@ -4598,7 +4750,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c01356201b03be479f6d7e60588cdcd, type: 2}
+  - {fileID: 2100000, guid: 42d2d36e274f1dd4c943d8a16196c754, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4639,7 +4791,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e51fdbd6dcd754fac6b0f10ed49919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColor: {r: 0.3635934, g: 0.9716981, b: 0.06416872, a: 1}
+  baseColor: {r: 0.33189654, g: 1, b: 0, a: 1}
+  srcBlend: 1
+  dstBlend: 3
+  zWrite: 1
+  cutoff: 0.743
 --- !u!1 &1815520524
 GameObject:
   m_ObjectHideFlags: 0
@@ -4747,6 +4903,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.90588236, g: 0.85644025, b: 0.1019608, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.294
 --- !u!1 &1844277888
 GameObject:
   m_ObjectHideFlags: 0
@@ -4854,6 +5014,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.026432902, g: 0.5244839, b: 0.9339623, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.221
 --- !u!1 &1852935376
 GameObject:
   m_ObjectHideFlags: 0
@@ -4961,6 +5125,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.90588236, g: 0.85644025, b: 0.1019608, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.294
 --- !u!1 &1858117526
 GameObject:
   m_ObjectHideFlags: 0
@@ -5026,7 +5194,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c01356201b03be479f6d7e60588cdcd, type: 2}
+  - {fileID: 2100000, guid: 42d2d36e274f1dd4c943d8a16196c754, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5067,7 +5235,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e51fdbd6dcd754fac6b0f10ed49919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColor: {r: 0.3635934, g: 0.9716981, b: 0.06416872, a: 1}
+  baseColor: {r: 0.33189654, g: 1, b: 0, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.743
 --- !u!1 &1877652320
 GameObject:
   m_ObjectHideFlags: 0
@@ -5175,6 +5347,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.90588236, g: 0.85644025, b: 0.1019608, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.294
 --- !u!1 &1897268378
 GameObject:
   m_ObjectHideFlags: 0
@@ -5282,7 +5458,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c01356201b03be479f6d7e60588cdcd, type: 2}
+  - {fileID: 2100000, guid: 42d2d36e274f1dd4c943d8a16196c754, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5323,7 +5499,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e51fdbd6dcd754fac6b0f10ed49919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColor: {r: 0.3635934, g: 0.9716981, b: 0.06416872, a: 1}
+  baseColor: {r: 0.33189654, g: 1, b: 0, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.743
 --- !u!1 &2090862732
 GameObject:
   m_ObjectHideFlags: 0
@@ -5431,6 +5611,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.026432902, g: 0.5244839, b: 0.9339623, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.221
 --- !u!1 &2099261885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5538,6 +5722,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseColor: {r: 0.026432902, g: 0.5244839, b: 0.9339623, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.221
 --- !u!1 &2111312584
 GameObject:
   m_ObjectHideFlags: 0
@@ -5603,7 +5791,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c01356201b03be479f6d7e60588cdcd, type: 2}
+  - {fileID: 2100000, guid: 42d2d36e274f1dd4c943d8a16196c754, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5644,4 +5832,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e51fdbd6dcd754fac6b0f10ed49919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseColor: {r: 0.3635934, g: 0.9716981, b: 0.06416872, a: 1}
+  baseColor: {r: 0.33189654, g: 1, b: 0, a: 1}
+  srcBlend: 1
+  dstBlend: 0
+  zWrite: 1
+  cutoff: 0.743
