@@ -3,6 +3,7 @@
 #include "../ShaderLibrary/Common.hlsl"
 #include "../ShaderLibrary/Surface.hlsl"
 #include "../ShaderLibrary/Light.hlsl"
+#include "../ShaderLibrary/BRDF.hlsl"
 #include "../ShaderLibrary/Lighting.hlsl"
 
 TEXTURE2D(_BaseMap);
@@ -13,6 +14,8 @@ UNITY_INSTANCING_BUFFER_START(UnityPerMaterial)
     UNITY_DEFINE_INSTANCED_PROP(float4, _BaseMap_ST)
     UNITY_DEFINE_INSTANCED_PROP(half4, _BaseColor)
     UNITY_DEFINE_INSTANCED_PROP(half,  _Cutoff)
+    UNITY_DEFINE_INSTANCED_PROP(half, _Metallic)
+    UNITY_DEFINE_INSTANCED_PROP(half, _Smoothness)
 UNITY_INSTANCING_BUFFER_END(UnityPerMaterial)
 
 struct Attributes
@@ -51,10 +54,14 @@ half4 LitPassFragment(Varyings input) : SV_Target
     half4 baseColor = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _BaseColor);
     half4 base = baseColor * baseMap;
     Surface surface;
+    surface.metallic = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Metallic);
+    surface.smoothness = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Smoothness);
     surface.normal = normalize(input.normalWS);
     surface.alpha = base.a;
     surface.color = base.rgb;
-    half3 color = GetLighting(surface);
+    BRDF brdf = GetBRDF(surface);
+    half3 color = GetLighting(surface, brdf);
+    
 #if defined(_CLIPPING)
     clip(base.a - UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Cutoff));
 #endif

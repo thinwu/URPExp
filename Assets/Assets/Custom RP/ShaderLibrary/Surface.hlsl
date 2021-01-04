@@ -5,6 +5,8 @@ struct Surface
     half3 normal;
     half alpha;
     half3 color;
+    half metallic;
+    half smoothness;
 };
 
 #endif
