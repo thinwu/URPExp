@@ -3,6 +3,7 @@
 struct Surface
 {
     half3 normal;
+    half3 viewDirection;
     half alpha;
     half3 color;
     half metallic;

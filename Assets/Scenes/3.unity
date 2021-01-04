@@ -632,6 +632,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   cutoff: 0.5
+  metallic: 0.332
+  smoothness: 0.524
 --- !u!1 &1487578409
 GameObject:
   m_ObjectHideFlags: 0

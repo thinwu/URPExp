@@ -28,9 +28,10 @@ struct Attributes
 
 struct Varyings
 {
-    half4 positionCS : SV_Position;
+    half4 positionCS : SV_POSITION;
     half3 normalWS : VAR_NORMAL;
     float2 baseUV : VAR_BASE_UV;
+    half3 positionWS : VAR_POSITION;
     UNITY_VERTEX_INPUT_INSTANCE_ID
 };
 
@@ -39,10 +40,11 @@ Varyings LitPassVertex(Attributes input)
     Varyings output;
     UNITY_SETUP_INSTANCE_ID(input);
     UNITY_TRANSFER_INSTANCE_ID(input, output);
-    half3 positionWS = TransformObjectToWorld(input.positionOS);
+    //half3 positionWS = TransformObjectToWorld(input.positionOS);
+    output.positionWS = TransformObjectToWorld(input.positionOS);
     float4 baseST = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _BaseMap_ST);
     output.baseUV = input.baseUV * baseST.xy + baseST.zw; // xy is scale, zw is offset
-    output.positionCS = TransformWorldToHClip(positionWS);
+    output.positionCS = TransformWorldToHClip(output.positionWS);
     output.normalWS = TransformObjectToWorldNormal(input.normalOS);
     return output;
 }
@@ -57,6 +59,7 @@ half4 LitPassFragment(Varyings input) : SV_Target
     surface.metallic = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Metallic);
     surface.smoothness = UNITY_ACCESS_INSTANCED_PROP(UnityPerMaterial, _Smoothness);
     surface.normal = normalize(input.normalWS);
+    surface.viewDirection = normalize(_WorldSpaceCameraPos - input.positionWS);
     surface.alpha = base.a;
     surface.color = base.rgb;
     BRDF brdf = GetBRDF(surface);

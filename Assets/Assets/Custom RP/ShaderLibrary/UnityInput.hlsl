@@ -7,7 +7,7 @@ half4 unity_LODFade;
 half4x4 unity_MatrixVP;
 half4x4 unity_MatrixV;
 half4x4 glstate_matrix_projection;
-
+half3 _WorldSpaceCameraPos;
 real4 unity_WorldTransformParams;
 CBUFFER_END
 #endif
