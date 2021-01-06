@@ -5,7 +5,7 @@
 #include "Light.hlsl"
 half3 GetLighting(Surface surface,BRDF brdf, Light light)
 {
-    return IncomingLight(surface, light) * brdf.diffuse;
+    return IncomingLight(surface, light) * DirectBRDF(surface, brdf, light);
 }
 half3 GetLighting(Surface surface, BRDF brdf)
 {
