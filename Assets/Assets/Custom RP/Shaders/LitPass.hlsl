@@ -62,7 +62,11 @@ half4 LitPassFragment(Varyings input) : SV_Target
     surface.viewDirection = normalize(_WorldSpaceCameraPos - input.positionWS);
     surface.alpha = base.a;
     surface.color = base.rgb;
+#if defined(_PREMULTIPLY_ALPHA)
+		BRDF brdf = GetBRDF(surface, true);
+#else
     BRDF brdf = GetBRDF(surface);
+	#endif
     half3 color = GetLighting(surface, brdf);
     
 #if defined(_CLIPPING)
